@@ -14,7 +14,7 @@ const CrudPage = () => {
     phone: ''
   });
 
-  const API_URL = 'http://localhost:2002/jenkinspractice/api/users';
+  const API_URL = 'http://localhost:2030/jenkinsapi/api/users';
 
   const fetchUsers = async () => {
     setLoading(true);
