@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.klef.jenkins</groupId>
-	<artifactId>BackendCRUD</artifactId>
+	<artifactId>JenkinsSpringBoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BackendCRUD</name>
-	<description>Jenkins Practice using Jenkins</description>
+	<name>JenkinsSpringBoot</name>
+	<description>Jenkins project for Spring Boot</description>
 	<packaging>war</packaging>
 	<url/>
 	<licenses>
@@ -59,7 +59,7 @@
 	</dependencies>
 
 	<build>
-	<finalName>jenkinspractice</finalName>
+	<finalName>jenkinsapi</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
