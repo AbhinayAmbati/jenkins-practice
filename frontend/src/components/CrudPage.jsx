@@ -284,26 +284,6 @@ const CrudPage = () => {
             </div>
           )}
         </div>
-
-        <div className="mt-6 bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">Quick Stats</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <p className="text-blue-600 font-semibold">Total Users</p>
-              <p className="text-2xl font-bold text-blue-800">{users.length}</p>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg">
-              <p className="text-green-600 font-semibold">With Phone</p>
-              <p className="text-2xl font-bold text-green-800">
-                {users.filter(user => user.phone && user.phone.trim()).length}
-              </p>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg">
-              <p className="text-purple-600 font-semibold">Filtered Results</p>
-              <p className="text-2xl font-bold text-purple-800">{filteredUsers.length}</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
