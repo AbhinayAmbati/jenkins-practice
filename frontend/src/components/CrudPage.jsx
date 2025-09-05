@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Plus, Edit2, Trash2, Search, X } from 'lucide-react';
 import axios from 'axios';
+import config from './config';
 
 const CrudPage = () => {
   const [users, setUsers] = useState([]);
@@ -14,7 +15,7 @@ const CrudPage = () => {
     phone: ''
   });
 
-  const API_URL = 'http://localhost:2030/jenkinsapi/api/users';
+  const API_URL = config.url;
 
   const fetchUsers = async () => {
     setLoading(true);
